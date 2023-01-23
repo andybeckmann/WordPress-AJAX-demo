@@ -30,6 +30,7 @@ body {
 
 .events__form {
 	display: flex;
+	gap: 8px;
 }
 
 .events .events__form-fields {
@@ -70,6 +71,76 @@ body {
 
 .events .events__search input[type=text] {
 	flex: 1;
+}
+
+.events__button {
+	display:  flex;
+	flex-flow: column;
+	gap: 8px;
+}
+
+.events input[type=text] {
+	padding: 8px 12px;
+	font-size: 18px;
+	line-height: 28px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.events select {
+	background: #ddd;
+	padding: 8px 12px;
+	font-size: 18px;
+	line-height: 28px;
+	color: #666;
+	border: none;
+	margin: 8px 0;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='12' height='12' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='gray'/></g></svg>");
+	background-position: right 12px top 50%;
+	background-repeat: no-repeat;
+}
+
+.events input[type=submit], .events input[type=reset] {
+	color: #fff;
+	border: 1px solid #222;
+	padding: 8px 12px;
+	font-size: 16px;
+	line-height: 28px;
+	-webkit-appearance: none;
+	border-radius: 4px;
+	transition: .25s ease opacity;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.events input[type=submit] {
+	background: #222;
+	opacity: .9;
+}
+
+.events input[type=submit]:hover {
+	opacity: .95;
+}
+
+.events input[type=submit]:active {
+	opacity: 1;
+}
+
+.events input[type=reset] {
+	background: #e54747;
+	border: 1px solid #e54747;
+	opacity: .9;
+}
+
+.events input[type=reset]:hover {
+	opacity: .95;
+}
+
+.events input[type=reset]:active {
+	opacity: 1;
 }
 
 /**
